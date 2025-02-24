@@ -101,7 +101,7 @@ Isso indica **3 caminhos independentes** no código:
 
 ## Comparação com Multiplicação Tradicional
 
-Para validar a eficiência do algoritmo de Karatsuba, comparamos seu tempo de execução com a multiplicação tradicional do Python usando números extremamente grandes. Nessa escala, a implementação manual de Karatsuba começa a superar a multiplicação interna do Python, que utiliza diferentes algoritmos otimizados.
+Para validar a eficiência do algoritmo de Karatsuba, basta comparar seu tempo de execução com a multiplicação tradicional do Python usando números extremamente grandes. Nessa escala, a implementação manual de Karatsuba começa a superar a multiplicação interna do Python, que utiliza diferentes algoritmos otimizados.
 
 ```python
 import time
