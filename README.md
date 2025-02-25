@@ -87,17 +87,19 @@ A **complexidade ciclomática** é determinada pela fórmula:
 M = E - N + 2P
 ```
 Onde:
-- **E (arestas)**: 6
-- **N (nós)**: 6
+- **E (arestas)**: 10
+- **N (nós)**: 8
 - **P (componentes conexos)**: 1
 
 Cálculo:
 ```
-M = 6 - 6 + 2(1) = 2
+M = 10 - 8 + 2(1) = 4
 ```
 Isso indica **3 caminhos independentes** no código:
 1. O caminho onde a multiplicação direta é utilizada.
 2. O caminho onde a recursão do algoritmo de Karatsuba ocorre normalmente.
+3. O caminho envolvendo a primeira chamada recursiva para calcular o produto baixo.
+4. O caminho envolvendo a segunda e terceira chamadas recursivas para calcular o produto intermediário e o produto alto.
 
 ## Comparação com Multiplicação Tradicional
 
