@@ -8,6 +8,7 @@ Este projeto tem como objetivo implementar o **algoritmo de Karatsuba** em Pytho
 O projeto é organizado da seguinte maneira:
 
 - 📜 **main.py** → Implementação principal do algoritmo de Karatsuba.
+- 📜 **grafo.png** → Grafo da implementação.
 - 📜 **README.md** → Documentação detalhada do projeto.
 
 ## Implementação do Algoritmo
@@ -100,6 +101,11 @@ Isso indica **3 caminhos independentes** no código:
 2. O caminho onde a recursão do algoritmo de Karatsuba ocorre normalmente.
 3. O caminho envolvendo a primeira chamada recursiva para calcular o produto baixo.
 4. O caminho envolvendo a segunda e terceira chamadas recursivas para calcular o produto intermediário e o produto alto.
+
+## Grafo de Fluxo
+
+   ![grafo](https://github.com/user-attachments/assets/44624743-448b-4f88-9b01-b76092ffcc42)
+
 
 ## Comparação com Multiplicação Tradicional
 
