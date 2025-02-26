@@ -104,8 +104,30 @@ Isso indica **3 caminhos independentes** no código:
 
 ## Grafo de Fluxo
 
-   ![grafo](https://github.com/user-attachments/assets/44624743-448b-4f88-9b01-b76092ffcc42)
+   <img width="573" alt="grafo" src="https://github.com/user-attachments/assets/9f187521-5858-4c7f-91af-ec7498da5b78" />
 
+
+**Nós**
+- (Nó 1) Entrada de Dados → Leitura de num1 e num2.
+- (Nó 2) Chamada Inicial de karatsuba(num1, num2) → Inicia a recursão.
+- (Nó 3) Caso Base → Retorno direto se um dos números for menor que 10.
+- (Nó 4) Divisão dos números ao meio → Separação em partes altas e baixas usando divmod().
+- (Nó 5) Combinação Parcial dos Resultados → Intermedia os cálculos antes da soma final.
+- (Nó 6) Cálculo de produto_baixo → Recursão com as partes baixas.
+- (Nó 7) Cálculo de produto_intermediario → Recursão com a soma das partes altas e baixas.
+- (Nó 8) Cálculo de produto_alto → Recursão com as partes altas.
+
+**Arestas** 
+- (1 → 2) Chamada da função karatsuba(num1, num2).
+- (2 → 3) Verificação do caso base (retorno direto se necessário).
+- (2 → 4) Caso contrário, divisão dos números em partes altas e baixas.
+- (4 → 5) Transição para a fase de cálculos recursivos.
+- (5 → 6) Chamada recursiva para produto_baixo.
+- (5 → 7) Chamada recursiva para produto_intermediario.
+- (5 → 8) Chamada recursiva para produto_alto.
+- (6 → 5) Retorno de produto_baixo para a combinação parcial.
+- (7 → 5) Retorno de produto_intermediario para a combinação parcial.
+- (8 → 5) Retorno de produto_alto para a combinação parcial.
 
 ## Comparação com Multiplicação Tradicional
 
